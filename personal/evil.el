@@ -20,3 +20,5 @@
   (define-key evil-motion-state-map (kbd "RET") nil)
   (define-key evil-motion-state-map (kbd "TAB") nil)
   (define-key evil-motion-state-map (kbd "C-u") 'evil-scroll-up))
+
+(require 'evil-mu4e)
