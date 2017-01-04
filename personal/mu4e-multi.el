@@ -37,7 +37,8 @@ KEY) is still recognized as well, for backward-compatibility.")
          (mu4e-refile-folder . "/personal/Archives")
          (mu4e-spam-folder . "/personal/Spam")
          (mu4e-sent-folder . "/personal/Sent")
-         (mu4e-trash-folder . "/personal/Trash"))
+         (mu4e-trash-folder . "/personal/Trash")
+         (mu4e-todo-folder . "/personal/Inbox/.ToDo"))
         ("gmail"
          (user-mail-address . "mettajhana@gmail.com")
          (mu4e-drafts-folder . "/gmail/\[Gmail\]/.Entw\&APw-rfe")
@@ -55,7 +56,8 @@ KEY) is still recognized as well, for backward-compatibility.")
          (mu4e-drafts-folder . "/bevuta/Drafts")
          (mu4e-spam-folder . "/bevuta/Spam")
          (mu4e-sent-folder . "/bevuta/Sent")
-         (mu4e-trash-folder . "/bevuta/Trash"))
+         (mu4e-trash-folder . "/bevuta/Trash")
+         (mu4e-todo-folder . "/bevuta/Inbox/.ToDo"))
         ("stefanischin"
          (user-mail-address . "3013-614@online.de")
          (mu4e-drafts-folder . "/stefanischin/Drafts")
@@ -68,6 +70,10 @@ KEY) is still recognized as well, for backward-compatibility.")
 ;; Add custom command and mark key for spam folder
 (mu4e-multi-make-mark-for-command mu4e-spam-folder)
 (define-key 'mu4e-headers-mode-map "i" 'mu4e-multi-mark-for-spam)
+
+;; Add custom command and mark key for todo folder
+(mu4e-multi-make-mark-for-command mu4e-todo-folder)
+(define-key 'mu4e-headers-mode-map "o" 'mu4e-multi-mark-for-todo)
 
 ;; Set mail sending hook for msmtp
 (add-hook 'message-send-mail-hook 'mu4e-multi-smtpmail-set-msmtp-account)
