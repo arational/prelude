@@ -1,5 +1,35 @@
 (require 'mu4e-multi)
 
+(defvar mu4e-bookmarks
+  `(,(make-mu4e-bookmark
+      :name  "Unread messages"
+      :query "flag:unread AND NOT flag:trashed"
+      :key ?u)
+    ,(make-mu4e-bookmark
+      :name "Today's messages"
+      :query "date:today..now"
+      :key ?t)
+    ,(make-mu4e-bookmark
+      :name "Last 7 days"
+      :query "date:7d..now"
+      :key ?w)
+    ,(make-mu4e-bookmark
+      :name "Personal ToDos"
+      :query "maildir:/personal/Inbox/.ToDo"
+      :key ?p)
+    ,(make-mu4e-bookmark
+      :name "Bevuta ToDos"
+      :query "maildir:/bevuta/Inbox/.ToDo"
+      :key ?b))
+  "A list of pre-defined queries. Each query is represented by a
+mu4e-bookmark structure with parameters :name with the name
+of the bookmark, :query with the query expression (a query
+string or an s-expression that evaluates to query string) and a
+:key, which is the shortcut-key for the query.
+
+An older form of bookmark, a 3-item list with (QUERY DESCRIPTION
+KEY) is still recognized as well, for backward-compatibility.")
+
 (setq mu4e-multi-account-alist
       '(("personal"
          (user-mail-address . "ivan@stefanischin.eu")
