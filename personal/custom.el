@@ -23,6 +23,7 @@
  '(global-relative-line-numbers-mode nil)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(linum-format (quote linum-relative))
+ '(mbsync-status-line-re "^C: .+")
  '(mu4e-change-filenames-when-moving t)
  '(mu4e-maildir "/home/ivan/.mail")
  '(nrepl-message-colors
