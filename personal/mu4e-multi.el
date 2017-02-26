@@ -1,6 +1,6 @@
 (require 'mu4e-multi)
 
-(defvar mu4e-bookmarks
+(setq mu4e-bookmarks
   `(,(make-mu4e-bookmark
       :name  "Unread messages"
       :query "flag:unread AND NOT flag:trashed"
@@ -20,15 +20,7 @@
     ,(make-mu4e-bookmark
       :name "Bevuta ToDos"
       :query "maildir:/bevuta/Inbox/.ToDo"
-      :key ?b))
-  "A list of pre-defined queries. Each query is represented by a
-mu4e-bookmark structure with parameters :name with the name
-of the bookmark, :query with the query expression (a query
-string or an s-expression that evaluates to query string) and a
-:key, which is the shortcut-key for the query.
-
-An older form of bookmark, a 3-item list with (QUERY DESCRIPTION
-KEY) is still recognized as well, for backward-compatibility.")
+      :key ?b)))
 
 (setq mu4e-multi-account-alist
       '(("personal"
@@ -75,8 +67,30 @@ KEY) is still recognized as well, for backward-compatibility.")
 (mu4e-multi-make-mark-for-command mu4e-todo-folder)
 (define-key 'mu4e-headers-mode-map "o" 'mu4e-multi-mark-for-todo)
 
+(setq mu4e-attachment-dir "~/tmp")
+
 ;; Set mail sending hook for msmtp
 (add-hook 'message-send-mail-hook 'mu4e-multi-smtpmail-set-msmtp-account)
 
 ;; Set global key for new mails
 (global-set-key (kbd "M-RET") 'mu4e-multi-compose-new)
+
+;; use multiple signatures
+(defun my-mu4e-choose-signature ()
+  "Insert one of a number of sigs"
+  (interactive)
+  (let ((message-signature
+          (mu4e-read-option "Signature:"
+            '(("formal" .
+             (concat
+              "bevuta IT GmbH - professionelle IT-Lösungen\n"
+              "Marktstraße 10 | http://www.bevuta.com/ | HRB 62476 AG Köln\n"
+              "50968 Köln     | Tel.: +49 221 282678-0 | Geschäftsführer: Pablo Beyen"))
+            ("informal" .
+              "Ivan Stefanischin")))))
+    (message-insert-signature)))
+
+(add-hook 'mu4e-compose-mode-hook
+          (lambda () (local-set-key (kbd "C-c C-w") #'my-mu4e-choose-signature)))
+
+(setq mu4e-msg2pdf "/usr/bin/msg2pdf")
