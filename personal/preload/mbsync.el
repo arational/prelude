@@ -31,6 +31,11 @@
   :group 'mbsync
   :type 'boolean)
 
+(defcustom mbsync-status-line-re (rx bol "Channel " (+ (any alnum)) eol)
+  "Regex which matches an output line to show it in the echo-area."
+  :group 'mbsync
+  :type 'string)
+
 (defvar mbsync-process-filter-pos nil)
 
 (defun mbsync-process-filter (proc string)
@@ -55,7 +60,7 @@
     (save-excursion
 	;; message progress
 	(goto-char mbsync-process-filter-pos)
-	(while (re-search-forward (rx bol "Channel " (+ (any alnum)) eol) nil t)
+	(while (re-search-forward mbsync-status-line-re nil t)
 	  (message "%s" (match-string 0))))
 
     (setq mbsync-process-filter-pos (point-max))))
