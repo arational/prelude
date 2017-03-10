@@ -7,6 +7,8 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCCC"])
+ '(browse-url-browser-function (quote browse-url-generic))
+ '(browse-url-generic-program "xdg-open")
  '(custom-enabled-themes (quote (deeper-blue)))
  '(custom-safe-themes
    (quote
