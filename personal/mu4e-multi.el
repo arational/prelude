@@ -31,12 +31,6 @@
          (mu4e-sent-folder . "/personal/Sent")
          (mu4e-trash-folder . "/personal/Trash")
          (mu4e-todo-folder . "/personal/Inbox/.ToDo"))
-        ("gmail"
-         (user-mail-address . "mettajhana@gmail.com")
-         (mu4e-drafts-folder . "/gmail/\[Gmail\]/.Entw\&APw-rfe")
-         (mu4e-spam-folder . "/gmail/\[Gmail\]/.Spam")
-         (mu4e-sent-folder . "/gmail/\[Gmail\]/.Gesendet")
-         (mu4e-trash-folder . "/gmail/\[Gmail\]/.Papierkorb"))
         ("spam"
          (user-mail-address . "katzomoto@online.de")
          (mu4e-drafts-folder . "/spam/Drafts")
