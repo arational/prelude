@@ -80,8 +80,8 @@
               "bevuta IT GmbH - professionelle IT-Lösungen\n"
               "Marktstraße 10 | http://www.bevuta.com/ | HRB 62476 AG Köln\n"
               "50968 Köln     | Tel.: +49 221 282678-0 | Geschäftsführer: Pablo Beyen"))
-            ("informal" .
-              "Ivan Stefanischin")))))
+              ("informal" .
+               "Ivan Stefanischin")))))
     (message-insert-signature)))
 
 (add-hook 'mu4e-compose-mode-hook
