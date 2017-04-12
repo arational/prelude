@@ -2,5 +2,5 @@
                             clj-refactor
                             relative-line-numbers
                             evil-smartparens
-                            anaconda-mode
-                            evil-mu4e))
+                            evil-mu4e
+                            rcirc-notify))
