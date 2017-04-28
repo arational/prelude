@@ -39,7 +39,7 @@
  '(org-support-shift-select nil)
  '(package-selected-packages
    (quote
-    (rcirc-notify mu4e evil-mu4e evil-smartparens relative-line-numbers org-evil zop-to-char zenburn-theme yaml-mode which-key volatile-highlights smex smartrep smartparens smart-mode-line rainbow-mode rainbow-delimiters pkgbuild-mode ov operate-on-number move-text markdown-mode magit key-chord json-mode js2-mode imenu-anywhere ido-ubiquitous helm-projectile helm-descbinds helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region evil-visualstar evil-surround evil-numbers elisp-slime-nav effort-export easy-kill discover-my-major diminish diff-hl csv-mode crux company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
+    (async avy cider clojure-mode dash editorconfig evil f gh git-commit helm helm-core hydra ido-completing-read+ inflections magit-popup multiple-cursors paredit pcache projectile seq slime spinner with-editor yasnippet rcirc-notify mu4e evil-mu4e evil-smartparens relative-line-numbers org-evil zop-to-char zenburn-theme yaml-mode which-key volatile-highlights smex smartrep smartparens smart-mode-line rainbow-mode rainbow-delimiters pkgbuild-mode ov operate-on-number move-text markdown-mode magit key-chord json-mode js2-mode imenu-anywhere ido-ubiquitous helm-projectile helm-descbinds helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region evil-visualstar evil-surround evil-numbers elisp-slime-nav effort-export easy-kill discover-my-major diminish diff-hl csv-mode crux company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(prelude-flyspell nil)
  '(rcirc-authinfo nil)
@@ -76,4 +76,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#181a26" :foreground "#DCDCCC" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 109 :width normal :foundry "1ASC" :family "Liberation Mono")))))
+ '(default ((t (:inherit nil :stipple nil :background "#181a26" :foreground "gray80" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 111 :width normal :foundry "PfEd" :family "Liberation Mono")))))
