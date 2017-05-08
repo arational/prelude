@@ -14,12 +14,12 @@
       :query "date:7d..now"
       :key ?w)
     ,(make-mu4e-bookmark
-      :name "Personal ToDos"
-      :query "maildir:/personal/Inbox/.ToDo"
+      :name "Personal"
+      :query "maildir:/personal/Inbox"
       :key ?p)
     ,(make-mu4e-bookmark
-      :name "Bevuta ToDos"
-      :query "maildir:/bevuta/Inbox/.ToDo"
+      :name "Bevuta"
+      :query "maildir:/bevuta/Inbox"
       :key ?b)))
 
 (setq mu4e-multi-account-alist
@@ -29,8 +29,7 @@
          (mu4e-refile-folder . "/personal/Archives")
          (mu4e-spam-folder . "/personal/Spam")
          (mu4e-sent-folder . "/personal/Sent")
-         (mu4e-trash-folder . "/personal/Trash")
-         (mu4e-todo-folder . "/personal/Inbox/.ToDo"))
+         (mu4e-trash-folder . "/personal/Trash"))
         ("spam"
          (user-mail-address . "katzomoto@online.de")
          (mu4e-drafts-folder . "/spam/Drafts")
@@ -42,8 +41,7 @@
          (mu4e-drafts-folder . "/bevuta/Drafts")
          (mu4e-spam-folder . "/bevuta/Spam")
          (mu4e-sent-folder . "/bevuta/Sent")
-         (mu4e-trash-folder . "/bevuta/Trash")
-         (mu4e-todo-folder . "/bevuta/Inbox/.ToDo"))
+         (mu4e-trash-folder . "/bevuta/Trash"))
         ("stefanischin"
          (user-mail-address . "3013-614@online.de")
          (mu4e-drafts-folder . "/stefanischin/Drafts")
@@ -57,9 +55,8 @@
 (mu4e-multi-make-mark-for-command mu4e-spam-folder)
 (define-key 'mu4e-headers-mode-map "i" 'mu4e-multi-mark-for-spam)
 
-;; Add custom command and mark key for todo folder
-(mu4e-multi-make-mark-for-command mu4e-todo-folder)
-(define-key 'mu4e-headers-mode-map "o" 'mu4e-multi-mark-for-todo)
+(evil-define-key evil-mu4e-state mu4e-headers-mode-map "+" 'mu4e-headers-mark-for-flag)
+(evil-define-key evil-mu4e-state mu4e-headers-mode-map "-" 'mu4e-headers-mark-for-unflag)
 
 (setq mu4e-attachment-dir "~/tmp")
 
