@@ -5,3 +5,7 @@
   (interactive)
   (call-process "uuidgen" nil t)
   (delete-backward-char 1))
+
+(add-to-list 'auto-mode-alist
+             '("\\.cl\\'" . (lambda ()
+                               (c-mode))))
