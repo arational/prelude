@@ -1,6 +1,5 @@
 (cl-loop for (mode . state) in '(;; GIT modes
-                                 (git-commit-mode . emacs)
-                                 (git-rebase-mode . emacs)
+                                 (text-mode . insert)
                                  (dired-mode . emacs)
                                  (shell-mode . emacs)
 
@@ -8,7 +7,7 @@
                                  (cider-docview-mode . emacs)
                                  (cider-inspector-mode . emacs)
                                  (cider-macroexpansion-mode . emacs)
-                                 (cider-repl-mode . emacs)
+                                 (cider-repl-mode . insert)
                                  (cider-result-mode . emacs)
                                  (cider-stacktrace-mode . emacs)
                                  (cider-test-report-mode . emacs))
