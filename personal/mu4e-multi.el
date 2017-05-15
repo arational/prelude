@@ -55,9 +55,6 @@
 (mu4e-multi-make-mark-for-command mu4e-spam-folder)
 (define-key 'mu4e-headers-mode-map "i" 'mu4e-multi-mark-for-spam)
 
-(evil-define-key evil-mu4e-state mu4e-headers-mode-map "+" 'mu4e-headers-mark-for-flag)
-(evil-define-key evil-mu4e-state mu4e-headers-mode-map "-" 'mu4e-headers-mark-for-unflag)
-
 (setq mu4e-attachment-dir "~/tmp")
 
 ;; Set mail sending hook for msmtp
