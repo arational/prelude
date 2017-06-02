@@ -45,7 +45,7 @@
  '(prelude-flyspell nil)
  '(rcirc-authinfo nil)
  '(rcirc-default-nick "ivan")
- '(rcirc-notify-popup-timeout 60)
+ '(rcirc-notify-popup-timeout 1800)
  '(rcirc-server-alist (quote (("irc.f0o.de" :nick "ivan" :channels ("#bevuta")))))
  '(scheme-program-name "csi")
  '(send-mail-function (quote sendmail-send-it))
