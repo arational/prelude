@@ -1,26 +1,30 @@
 (require 'mu4e-multi)
 
 (setq mu4e-bookmarks
-  `(,(make-mu4e-bookmark
-      :name  "Unread messages"
-      :query "flag:unread AND NOT flag:trashed"
-      :key ?u)
-    ,(make-mu4e-bookmark
-      :name "Today's messages"
-      :query "date:today..now"
-      :key ?t)
-    ,(make-mu4e-bookmark
-      :name "Last 7 days"
-      :query "date:7d..now"
-      :key ?w)
-    ,(make-mu4e-bookmark
-      :name "Personal"
-      :query "maildir:/personal/Inbox"
-      :key ?p)
-    ,(make-mu4e-bookmark
-      :name "Bevuta"
-      :query "maildir:/bevuta/Inbox"
-      :key ?b)))
+      `(,(make-mu4e-bookmark
+          :name  "Flagged messages"
+          :query "flag:flagged AND NOT flag:trashed"
+          :key ?f)
+        ,(make-mu4e-bookmark
+          :name  "Unread messages"
+          :query "flag:unread AND NOT flag:trashed"
+          :key ?u)
+        ,(make-mu4e-bookmark
+          :name "Today's messages"
+          :query "date:today..now"
+          :key ?t)
+        ,(make-mu4e-bookmark
+          :name "Last 7 days"
+          :query "date:7d..now"
+          :key ?w)
+        ,(make-mu4e-bookmark
+          :name "Personal"
+          :query "maildir:/personal/Inbox"
+          :key ?p)
+        ,(make-mu4e-bookmark
+          :name "Bevuta"
+          :query "maildir:/bevuta/Inbox"
+          :key ?b)))
 
 (setq mu4e-multi-account-alist
       '(("personal"
