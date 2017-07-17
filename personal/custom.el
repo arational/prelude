@@ -21,7 +21,7 @@
  '(enable-local-variables nil)
  '(fci-rule-color "#383838")
  '(geiser-default-implementation (quote chicken))
- '(geiser-mode-start-repl-p t)
+ '(geiser-mode-start-repl-p t t)
  '(global-linum-mode nil)
  '(global-relative-line-numbers-mode nil)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
