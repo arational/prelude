@@ -34,12 +34,6 @@
          (mu4e-spam-folder . "/personal/Spam")
          (mu4e-sent-folder . "/personal/Sent")
          (mu4e-trash-folder . "/personal/Trash"))
-        ("spam"
-         (user-mail-address . "katzomoto@online.de")
-         (mu4e-drafts-folder . "/spam/Drafts")
-         (mu4e-spam-folder . "/spam/Spam")
-         (mu4e-sent-folder . "/spam/Sent")
-         (mu4e-trash-folder . "/spam/Trash"))
         ("bevuta"
          (user-mail-address . "ivan.stefanischin@bevuta.com")
          (mu4e-drafts-folder . "/bevuta/Drafts")
