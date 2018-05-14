@@ -75,8 +75,8 @@
               ("informal" .
                (concat
                 "Ivan Stefanischin\n"
-                "Adenauerallee 16"
-                "53332 Bornheim"))))))
+                "Wahner Str. 5\n"
+                "51143 Köln"))))))
     (message-insert-signature)))
 
 (add-hook 'mu4e-compose-mode-hook
