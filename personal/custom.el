@@ -35,6 +35,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(nxml-attribute-indent 2)
  '(nxml-child-indent 2)
+ '(org-agenda-files (quote ("~/var/todo.org")))
  '(org-clock-continuously t)
  '(org-clock-rounding-minutes 15)
  '(org-ellipsis "[...]")
