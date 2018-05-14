@@ -20,6 +20,7 @@
  '(electric-indent-mode t)
  '(enable-local-variables nil)
  '(fci-rule-color "#383838")
+ '(geiser-active-implementations (quote (chicken)))
  '(geiser-default-implementation (quote chicken))
  '(geiser-mode-start-repl-p t t)
  '(global-linum-mode nil)
