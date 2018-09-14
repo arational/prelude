@@ -45,9 +45,6 @@
  '(org-src-fontify-natively t)
  '(org-support-shift-select nil)
  '(org-time-stamp-rounding-minutes (quote (15 15)))
- '(package-selected-packages
-   (quote
-    (mu4e-alert puppet-mode ace-window ht marshal writeroom-mode cljr-helm clj-refactor goto-chg ido-ubiquitous queue rich-minority s php-mode helm-dired-recent-dirs async avy cider clojure-mode dash editorconfig f gh git-commit helm helm-core hydra ido-completing-read+ inflections magit-popup multiple-cursors paredit pcache projectile seq slime spinner with-editor yasnippet rcirc-notify mu4e org-evil zop-to-char yaml-mode which-key volatile-highlights smex smartrep smartparens smart-mode-line rainbow-mode rainbow-delimiters pkgbuild-mode ov operate-on-number move-text markdown-mode magit key-chord json-mode js2-mode imenu-anywhere helm-projectile helm-descbinds helm-ag guru-mode grizzl god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx-ido expand-region elisp-slime-nav effort-export easy-kill discover-my-major diminish diff-hl csv-mode crux company browse-kill-ring beacon anzu ag)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(prelude-flyspell nil)
  '(rcirc-authinfo nil)
