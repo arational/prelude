@@ -1,3 +1,4 @@
 (prelude-require-packages '(ag
                             clj-refactor
-                            rcirc-notify))
+                            rcirc-notify
+                            dired-du))

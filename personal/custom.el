@@ -17,6 +17,7 @@
  '(custom-safe-themes
    (quote
     ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "40f6a7af0dfad67c0d4df2a1dd86175436d79fc69ea61614d668a635c2cd94ab" default)))
+ '(dired-du-size-format t)
  '(dired-listing-switches "-alh")
  '(ee-export-file "~/var/effort.csv")
  '(ee-subtree-tag "redmine")
@@ -51,6 +52,9 @@
  '(org-src-fontify-natively t)
  '(org-support-shift-select nil)
  '(org-time-stamp-rounding-minutes (quote (15 15)))
+ '(package-selected-packages
+   (quote
+    (dired-du zop-to-char zenburn-theme yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(prelude-flyspell nil)
  '(rcirc-authinfo nil)
