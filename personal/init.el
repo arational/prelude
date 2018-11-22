@@ -12,13 +12,17 @@
 
 ;; Adds the ticket number into the commit message
 (defun my-git-commit-setup ()
-  (when (string-match-p "^/home/ivan/src/bevuta" (magit-git-dir))
-    (let ((branch (magit-get-current-branch)))
-      (when (string-match "-\\([[:digit:]]\\{3,\\}\\)" branch)
-        (let ((prefix (format "[%s] \n" (match-string 1 branch))))
-          (goto-char (point-min))
-          (insert prefix)
-          (forward-char -1))))))
+  (let ((root (magit-git-dir))
+        (branch (magit-get-current-branch)))
+    (when (string-match "^/home/ivan/src/bevuta" root)
+      (let ((re "\\([[:digit:]]\\{3,\\}\\)-?")
+            (format-string "[%s] \n"))
+        (when (and branch (string-match re branch))
+          (let ((prefix (format format-string (match-string 1 branch))))
+            (goto-char (point-min))
+            (when (eolp)
+              (insert prefix)
+              (forward-char -1))))))))
 
 (add-hook 'git-commit-mode-hook 'my-git-commit-setup)
 
