@@ -62,6 +62,8 @@
  '(rcirc-default-nick "ivan")
  '(rcirc-notify-popup-timeout 1800)
  '(rcirc-server-alist (quote (("irc.f0o.de" :nick "ivan" :channels ("#bevuta")))))
+ '(rust-format-on-save t t)
+ '(rust-indent-offset 4)
  '(scheme-program-name "csi")
  '(send-mail-function (quote sendmail-send-it))
  '(sendmail-program "msmtp")
