@@ -55,7 +55,7 @@
  '(org-time-stamp-rounding-minutes (quote (15 15)))
  '(package-selected-packages
    (quote
-    (dired-du zop-to-char zenburn-theme yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
+    (projectile sesman swiper visual-fill-column with-editor yasnippet flycheck-rust racer cargo rust-mode dired-du zop-to-char zenburn-theme yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(prelude-flyspell nil)
  '(rcirc-authinfo nil)
