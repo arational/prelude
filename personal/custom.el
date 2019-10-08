@@ -29,7 +29,7 @@
  '(geiser-active-implementations (quote (chicken)))
  '(geiser-chicken-binary "chicken-csi")
  '(geiser-default-implementation (quote chicken))
- '(geiser-mode-start-repl-p t t)
+ '(geiser-mode-start-repl-p t)
  '(global-linum-mode nil)
  '(global-relative-line-numbers-mode nil)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
@@ -57,7 +57,7 @@
  '(org-time-stamp-rounding-minutes (quote (15 15)))
  '(package-selected-packages
    (quote
-    (htmlize projectile sesman swiper visual-fill-column with-editor yasnippet flycheck-rust racer cargo rust-mode dired-du zop-to-char zenburn-theme yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
+    (async avy cider clojure-mode counsel dash ghub git-commit ht hydra ivy magit-popup multiple-cursors rich-minority super-save htmlize projectile sesman swiper visual-fill-column with-editor yasnippet flycheck-rust racer cargo rust-mode dired-du zop-to-char yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(prelude-flyspell nil)
  '(racer-rust-src-path
@@ -66,7 +66,7 @@
  '(rcirc-default-nick "ivan")
  '(rcirc-notify-popup-timeout 1800)
  '(rcirc-server-alist (quote (("irc.f0o.de" :nick "ivan" :channels ("#bevuta")))))
- '(rust-format-on-save t t)
+ '(rust-format-on-save t)
  '(rust-indent-offset 4)
  '(scheme-program-name "csi")
  '(send-mail-function (quote sendmail-send-it))
