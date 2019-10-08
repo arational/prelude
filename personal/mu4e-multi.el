@@ -82,7 +82,4 @@
 (add-hook 'mu4e-compose-mode-hook
           (lambda () (local-set-key (kbd "C-c C-w") #'my-mu4e-choose-signature)))
 
-(add-hook 'mbsync-exit-hook
-          (lambda () (mu4e-update-mail-and-index nil)))
-
 (setq mu4e-msg2pdf "/usr/bin/msg2pdf")
