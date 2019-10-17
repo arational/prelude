@@ -72,7 +72,7 @@
  '(send-mail-function (quote sendmail-send-it))
  '(sendmail-program "msmtp")
  '(smartparens-global-mode nil)
- '(smartparens-global-strict-mode t)
+ '(smartparens-global-strict-mode nil)
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
