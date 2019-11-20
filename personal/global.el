@@ -4,3 +4,6 @@
 
 ;; Toggle smartparens strict mode for buffer
 (global-set-key (kbd "C-x M-s") 'smartparens-strict-mode)
+
+;; Wrap in square brackets
+(global-set-key (kbd "M-[") 'paredit-wrap-square)
