@@ -92,17 +92,7 @@
 
 (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
 
-;; Add custom command and mark key for spam folder
-;;(mu4e-multi-make-mark-for-command mu4e-spam-folder)
-;;(define-key 'mu4e-headers-mode-map "i" 'mu4e-multi-mark-for-spam)
-
 (setq mu4e-attachment-dir "~/tmp")
-
-;; Set mail sending hook for msmtp
-;;(add-hook 'message-send-mail-hook 'mu4e-multi-smtpmail-set-msmtp-account)
-
-;; Set global key for new mails
-;;(global-set-key (kbd "M-RET") 'mu4e-multi-compose-new)
 
 ;; use multiple signatures
 (defun my-mu4e-choose-signature ()
