@@ -3,13 +3,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(alert-fade-time 20)
+ '(alert-fade-time 0)
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#3F3F3F" "#CC9393" "#7F9F7F" "#F0DFAF" "#8CD0D3" "#DC8CC3" "#93E0E3" "#DCDCCC"])
  '(browse-url-browser-function (quote browse-url-generic))
  '(browse-url-generic-program "xdg-open")
+ '(cider-repl-display-help-banner nil)
  '(cider-repl-display-in-current-window t)
  '(cider-repl-use-pretty-printing t)
  '(company-quickhelp-color-background "#4F4F4F")
@@ -33,6 +34,7 @@
  '(global-linum-mode nil)
  '(global-relative-line-numbers-mode nil)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(ispell-dictionary "german")
  '(linum-format (quote linum-relative))
  '(magit-diff-arguments (quote ("--stat" "--no-ext-diff" "-w")))
  '(magit-repository-directories (quote (("~/src/bevuta" . 2) ("~/src" . 1))))
@@ -45,6 +47,7 @@
  '(nxml-attribute-indent 2)
  '(nxml-child-indent 2)
  '(org-agenda-files (quote ("~/var/todo.org")))
+ '(org-babel-load-languages (quote ((dot . t) (emacs-lisp . t))))
  '(org-clock-continuously t)
  '(org-clock-into-drawer nil)
  '(org-clock-rounding-minutes 15)
@@ -57,7 +60,7 @@
  '(org-time-stamp-rounding-minutes (quote (15 15)))
  '(package-selected-packages
    (quote
-    (async avy cider clojure-mode counsel dash ghub git-commit ht hydra ivy magit-popup multiple-cursors rich-minority super-save htmlize projectile sesman swiper visual-fill-column with-editor yasnippet flycheck-rust racer cargo rust-mode dired-du zop-to-char yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
+    (lsp-ui company-lsp alert log4e lv paredit parseedn pos-tip transient treepy scss-mode google-translate async avy cider clojure-mode counsel dash ghub git-commit ht hydra ivy magit-popup multiple-cursors rich-minority super-save htmlize projectile sesman swiper visual-fill-column with-editor yasnippet flycheck-rust racer cargo rust-mode dired-du zop-to-char yaml-mode writeroom-mode which-key volatile-highlights undo-tree smartrep smartparens smart-mode-line slime rcirc-notify rainbow-mode rainbow-delimiters puppet-mode popup pkgbuild-mode php-mode ov operate-on-number mu4e-alert move-text memoize markdown-mode magit json-mode js2-mode imenu-anywhere hl-todo guru-mode grizzl goto-chg god-mode gitignore-mode gitconfig-mode git-timemachine gist geiser flycheck flx f expand-region elisp-slime-nav effort-export editorconfig easy-kill discover-my-major diminish diff-hl csv-mode crux counsel-projectile company clj-refactor browse-kill-ring beacon anzu ag ace-window)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(prelude-flyspell nil)
  '(racer-rust-src-path
