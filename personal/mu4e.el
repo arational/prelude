@@ -124,6 +124,7 @@
           (lambda () (local-set-key (kbd "C-c C-w") #'my-mu4e-choose-signature)))
 
 (setq mu4e-msg2pdf "/usr/bin/msg2pdf")
+(setq mu4e-attachment-dir "~/tmp")
 
 ;; don't keep message buffers around
 (setq message-kill-buffer-on-exit t)
