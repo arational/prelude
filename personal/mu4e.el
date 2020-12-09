@@ -89,10 +89,18 @@
                   (set (car var) (cadr var)))
               account-vars)
       (error "No email account found"))))
-
 (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
 
-(setq mu4e-attachment-dir "~/tmp")
+;; Mark as read and move to spam
+(add-to-list 'mu4e-marks
+             '(spam
+               :char       "i"
+               :prompt     "Spam"
+               :show-target (lambda (target) mu4e-spam-folder)
+               :action      (lambda (docid msg target)
+                              (mu4e~proc-move docid mu4e-spam-folder "+S-u-N"))))
+(mu4e~headers-defun-mark-for spam)
+(define-key mu4e-headers-mode-map (kbd "i") 'mu4e-headers-mark-for-spam)
 
 ;; use multiple signatures
 (defun my-mu4e-choose-signature ()
