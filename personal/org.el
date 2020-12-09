@@ -4,7 +4,8 @@
       (org-eval-in-calendar '(calendar-backward-day 1))))
   (define-key org-read-date-minibuffer-local-map (kbd "C-n")
     (lambda () (interactive)
-      (org-eval-in-calendar '(calendar-forward-day 1)))))
+      (org-eval-in-calendar '(calendar-forward-day 1))))
+  (define-key org-mode-map (kbd "C-c C-x C-r") 'org-clock-report))
 
 (defun org-ispell ()
   "Configure `ispell-skip-region-alist' for `org-mode'."
