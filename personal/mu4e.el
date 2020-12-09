@@ -129,4 +129,4 @@
 ;; don't keep message buffers around
 (setq message-kill-buffer-on-exit t)
 
-(setq mu4e-get-mail-command "mbsync")
+(setq mu4e-get-mail-command "mbsync -a")
